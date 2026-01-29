@@ -15,11 +15,13 @@ document.addEventListener('DOMContentLoaded', () => {
         body.classList.toggle('dark-mode');
 
         if (body.classList.contains('dark-mode')) {
-            icon.classList.remove('fa-sun');
-            icon.classList.add('fa-moon');
-        } else {
+            // Dark Mode -> Show Sun (to switch to Light)
             icon.classList.remove('fa-moon');
             icon.classList.add('fa-sun');
+        } else {
+            // Light Mode -> Show Moon (to switch to Dark)
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
         }
     });
 
